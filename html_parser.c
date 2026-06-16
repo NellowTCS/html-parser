@@ -617,7 +617,7 @@ look_for_tag:
         /*
          * Either a comment or an SGML declaration.
          * Non-strict mode (default): scan for "-->" without caring about
-         * SGML comment syntax — matches what real browsers do.
+         * SGML comment syntax matches what real browsers do.
          * Strict mode: delegate to skip_declaration().
          */
         if (!(flags & HTML_SCAN_STRICT_COMMENTS)
@@ -755,7 +755,7 @@ look_for_tag:
                 aval_end = p;
 
                 if (aval_beg == aval_end)
-                    /* Empty unquoted value: <foo bar=> — malformed. */
+                    /* Empty unquoted value: <foo bar=> is malformed. */
                     goto backout_tag;
 
                 araw_beg   = aval_beg;
