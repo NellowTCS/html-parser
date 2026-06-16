@@ -1,0 +1,5 @@
+{
+  "name": "html_parser",
+  "version": "1.0.0",
+  "description": "Streaming HTML tag scanner"
+}
